@@ -54,7 +54,6 @@ function App() {
     <div>
     <Header />
     <NavBar />
-    <Photography />
     <Footer />
     </div>
   )

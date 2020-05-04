@@ -30,8 +30,14 @@
 
 .gallery-photo img{
   border-radius: 30px;
-  text-align: center;
+  margin: 10px;
 
+}
+
+.photo{
+  border-radius: 60px;
+
+  display: inline-block;
 }
 
 .navigation-sub{
@@ -40,15 +46,16 @@
 }
 
 .navigation{
-  top: 0;
-  position: relative;
+  position: fixed;
   background-color: purple;
-  padding: 10px;
+  padding: 0px;
 }
 
 .item{
   color: green;
-  padding: 50px;
+  padding: 20px;
+  margin-right: 80px;
+  display: inline-block;
 }
 
 @keyframes App-logo-spin {

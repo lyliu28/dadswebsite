@@ -13,16 +13,14 @@ function Photography(){
   return (
 
     <div>
+    <h1> Photography</h1>
       <Photo
+          className= "photo"
           src= "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80"
           title="Land's End"
           description="hey"
       />
-      <Photo
-          src= "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80"
-          title="Land's End"
-          description="hey"
-      />
+    
     </div>
   )
 }

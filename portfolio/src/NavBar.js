@@ -12,13 +12,13 @@ function NavBar(){
   return (
     <BrowserRouter>
       <div className="App">
-        <Route path="/photography" component={Photography} />
+        <Route exact path="/" component={Photography} />
         <Route path="/articles" component={Articles} />
         <Route path="/about" component={About} />
 
         <div className="navigation">
             <div className="navigation-sub">
-                  <Link to="/photography" className="item">Photography</Link>
+                  <Link to="/" className="item">Photography</Link>
                   <Link to="/articles" className="item">Articles</Link>
                   <Link to="/about" className="item">About</Link>
              </div>
