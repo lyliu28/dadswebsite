@@ -12,7 +12,7 @@ import photoData from "./photoData"
 class Photography extends React.Component {
     render(){
       const photoComponents = photoData.map(photo=>
-          <Photo src={photo.url} title={photo.title} desc={photo.desc}/>)
+          <Photo src={photo.url} title={photo.title} desc={photo.desc} width={photo.width}/>)
 
       return (
         <div>
