@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 function NavBar(){
   return (
+
     <BrowserRouter>
       <div className="App">
         <Route exact path="/" component={Photography} />
@@ -17,11 +18,9 @@ function NavBar(){
         <Route path="/about" component={About} />
 
         <div className="navigation">
-            <div className="navigation-sub">
                   <Link to="/" className="item">Photography</Link>
                   <Link to="/articles" className="item">Articles</Link>
                   <Link to="/about" className="item">About</Link>
-             </div>
         </div>
 
       </div>

@@ -9,14 +9,14 @@ function Header(){
 
   if (hours < 12) {
     timeOfDay = "morning"
-  } else if (hours < 6) {
+  } else if (hours < 17) {
     timeOfDay = "afternoon"
   } else {
     timeOfDay = "night"
   }
 
   return (
-    <div className = "App">
+    <div className = "Header">
     <h1>Good {timeOfDay}!</h1>
     </div>
   )

@@ -49,14 +49,16 @@ import Photography from "./Photography"
 import './App.css';
 
 
-function App() {
-  return (
-    <div>
-    <Header />
-    <NavBar />
-    <Footer />
-    </div>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+      <Header />
+      <NavBar />
+      <Footer />
+      </div>
+    )
+  }
 }
 
 

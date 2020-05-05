@@ -3,26 +3,26 @@ import ReactDOM from "react-dom"
 import Gallery from 'react-photo-gallery'
 import NavBar from './NavBar'
 import Photo from './Gallery/Photo'
+import photoData from "./photoData"
 
 //https://reactjsexample.com/responsive-react-masonry-photo-gallery-component/
 
 
-function Photography(){
 
+class Photography extends React.Component {
+    render(){
+      const photoComponents = photoData.map(photo=>
+          <Photo src={photo.url} title={photo.title} desc={photo.desc}/>)
 
-  return (
-
-    <div>
-    <h1> Photography</h1>
-      <Photo
-          className= "photo"
-          src= "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80"
-          title="Land's End"
-          description="hey"
-      />
-    
-    </div>
-  )
+      return (
+        <div>
+          <div className="row">
+          <h1> Photography</h1>
+          {photoComponents}
+          </div>
+        </div>
+      )
+    }
 }
 
 export default Photography
