@@ -43,6 +43,8 @@ import React from "react"
 import Header from "./Header"
 import NavBar from "./NavBar"
 import Footer from "./Footer"
+import Articles from "./Articles"
+
 import Photography from "./Photography"
 
 
@@ -53,9 +55,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <Header />
+      <Header/>
       <NavBar />
-      <Footer />
       </div>
     )
   }

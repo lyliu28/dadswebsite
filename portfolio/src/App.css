@@ -1,23 +1,27 @@
 
+
 .Header {
   text-align: center;
 }
 
-*{
-  box-sizing: border-box;
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+h1 {
+  padding-top: 130px;
+  text-align: center;
 }
 
+.name{
+  font-size: 28px;
+  position: absolute;
+  padding-top: 70px;
+  padding-left: 30px;
+  color: black;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 /*
 .App-header {
@@ -38,96 +42,94 @@
 
 
 
-.gallery-photo img{
-  width: 160px;
-  height: 120px;
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > Photo { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+/* ------Navigation-------*/
+nav{
+  float: right;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px;
+  height: 10%;
+  background-color: rgba(30, 0, 0, 0);
+  top: 70px;
+  width: 100%;
+}
+
+.nav-links{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.item{
+  color:grey;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+/* ------Navigation End-------*/
+
+
+/* -------Gallery----------*/
+.gallery-container{
+    padding-top: 160px;
+}
+
+
+/*
+.row {
+   width: 90%;
+   margin: auto;
+}
+*/
+
+/* Create three equal columns that floats next to each other */
+
+.column {
   float: left;
-  background: #D269;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
+  width: 33.3333%;
+  text-align: center;
 
 }
 
-/* ---- grid ---- */
-
-.grid {
-  background: #EEEE;
-  max-width: 1200px;
+.column img {
+  width: 350px;
+  padding: 5px;
 }
 
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- grid-item ---- */
-
-.grid-item {
-
-}
-
-.grid-item--width2 { width: 320px; }
-.grid-item--width3 { width: 480px; }
-.grid-item--width4 { width: 640px; }
-
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
-
-
-@media only screen and (max-width: 700px) {
-  .responsive {
+@media only screen and (max-width: 1080px) {
+  .column {
     width: 49.99999%;
-    margin: 6px 0;
+    margin-bottom: 10px;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
+@media only screen and (max-width: 720px) {
+  .column {
     width: 100%;
   }
 }
 
 
-.row {
-   width: 90%;
-   margin: auto;
-}
-
-/* for homepage */
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.3333%;
-  padding: 0px 15px 15px 15px;
-
-}
-
-
-.navigation{
-  position: absolute;
-  float: right;
-  background-color: purple;
-  padding: 0px;
-  font-size: 30px;
-   margin: 50;
-}
-
-.item{
-  color: green;
-  padding: 20px;
-  margin-right: 80px;
-  display: inline-block;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* -------Gallery End----------*/

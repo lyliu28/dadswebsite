@@ -17,7 +17,8 @@ function Header(){
 
   return (
     <div className = "Header">
-    <h1>Good {timeOfDay}!</h1>
+    <h3 className="name">Dawei Liu</h3>
+
     </div>
   )
 }
