@@ -4,21 +4,33 @@
   text-align: center;
 }
 
+* {
+  background-color: #39404a;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'PT Sans', sans-serif;
 }
 h1 {
   padding-top: 130px;
+  float:center;
   text-align: center;
 }
 
+h5{
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 110px;
+  font-size: 30px;
+}
+
 .name{
-  font-size: 28px;
+  font-size: 36px;
   position: absolute;
-  padding-top: 70px;
-  padding-left: 30px;
-  color: black;
+  top: 30px;
+  padding-left: 50px;
+  color: #f5a022;
 
 }
 
@@ -69,16 +81,19 @@ nav{
   align-items: center;
   margin: 15px;
   height: 10%;
+  font-size: 17px;
   background-color: rgba(30, 0, 0, 0);
-  top: 70px;
+  top: 100px;
   width: 100%;
 }
 
 .nav-links{
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-right: 70px;
+
 
 }
 
@@ -93,7 +108,13 @@ nav{
 
 /* -------Gallery----------*/
 .gallery-container{
-    padding-top: 160px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.category-container{
+    padding-top: 0px;
+    text-align: center;
 }
 
 
@@ -107,29 +128,93 @@ nav{
 /* Create three equal columns that floats next to each other */
 
 .column {
-  float: left;
-  width: 33.3333%;
-  text-align: center;
+  width: 350px;
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
 
 }
 
 .column img {
   width: 350px;
-  padding: 5px;
+
+
+}
+
+.text-block {
+position: absolute;
+bottom: 0px;
+right: 80px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.column:hover .overlay {
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+
 }
 
 @media only screen and (max-width: 1080px) {
   .column {
-    width: 49.99999%;
-    margin-bottom: 10px;
+    width: 400px;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .column img {
+    width: 400px;
+    padding-right: 0px;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 400px) {
   .column {
-    width: 100%;
+    width: 90%;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
   }
+  .column img {
+    width: 90%;
+    padding-right: 0px;
+  }
+
+  h5{
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 170px;
+    font-size: 20px;
+  }
+
+  h1 {
+    padding-top: 160px;
+    font-size: 20px;
+    float:center;
+    text-align: center;
+  }
+
+  nav{
+
+    justify-content: center;
+
+  }
+
 }
+
 
 
 /* -------Gallery End----------*/

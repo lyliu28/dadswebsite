@@ -4,7 +4,6 @@ import NavBar from './NavBar'
 import Photo from './Gallery/Photo'
 import photoData from "./photoData"
 import Masonry from "react-masonry-css"
-import Gallery from 'react-photo-gallery'
 
 //https://reactjsexample.com/responsive-react-masonry-photo-gallery-component/
 
@@ -13,7 +12,7 @@ import Gallery from 'react-photo-gallery'
 class Photography extends React.Component {
     render(){
       const photoComponents = photoData.map(photo=>
-          <Photo src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
+          <Photo cat = {photo.category} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
 
       return (
         <div className="gallery-container">
