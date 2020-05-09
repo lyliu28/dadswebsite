@@ -1,4 +1,4 @@
-const aData = [
+const cData = [
 
   {
     id: 1,
@@ -86,4 +86,4 @@ const aData = [
 
 ]
 
-export default aData
+export default cData

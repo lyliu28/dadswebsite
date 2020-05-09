@@ -17,7 +17,7 @@ const photoData = [
     desc: "This was a beautiful morning",
     width: "320px",
     height: "200",
-    category: "p"
+    category: "B"
   },
 
   {
@@ -27,7 +27,7 @@ const photoData = [
     desc: "This was a beautiful morning",
     width: "300px",
     height: "200",
-    category: "a"
+    category: "C"
 
 
   },
@@ -40,7 +40,7 @@ const photoData = [
     desc: "This was a beautiful morning",
     width: "300px",
     height: "200",
-    category: "a"
+    category: "D"
 
 
   },
@@ -51,7 +51,7 @@ const photoData = [
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "300px",
-    category: "water"
+    category: "E"
   },
 
   {
@@ -61,7 +61,7 @@ const photoData = [
     desc: "This was a beautiful morning",
     width: "300px",
     height: "200",
-    category: "canyons"
+    category: "F"
 
 
   },

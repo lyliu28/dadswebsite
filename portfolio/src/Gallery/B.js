@@ -1,5 +1,5 @@
 import React from "react"
-import aData from './PhotoData/aData'
+import bData from './PhotoData/bData'
 import ImageModal from './ImageModal'
 import CatPhoto from "./CatPhoto"
 import CatPhotoLarge from "./CatPhotoLarge"
@@ -7,18 +7,18 @@ import CatPhotoLarge from "./CatPhotoLarge"
 
 //https://reactjsexample.com/responsive-react-masonry-photo-gallery-component/
 
-class A extends React.Component {
+class B extends React.Component {
     render(){
-      const photos = aData.map(photo=>
+      const photos = bData.map(photo=>
           <CatPhoto id = {photo.id} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
 
-      const large_photos = aData.map(photo=>
+      const large_photos = bData.map(photo=>
             <CatPhotoLarge id = {photo.id} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
 
       return (
         <div>
 
-          <h5>A</h5>
+          <h5>B</h5>
           <div className="category-container">
           {photos}
           </div>
@@ -33,4 +33,4 @@ class A extends React.Component {
     }
 }
 
-export default A
+export default B

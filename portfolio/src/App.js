@@ -47,6 +47,11 @@ import Articles from "./Articles"
 import Canyons from "./Gallery/Canyons"
 import About from "./About"
 import A from "./Gallery/A"
+import B from "./Gallery/B"
+import C from "./Gallery/C"
+
+
+
 import ReactModal from 'react-modal';
 
 
@@ -61,22 +66,21 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-
       <div>
+            <Switch>
+              <Route exact path="/" component={Photography} />
+              <Route path="/articles" component={Articles} />
+              <Route path="/about" component={About} />
+              <Route path="/photography/canyons" component={Canyons} />
+              <Route path="/photography/A" component={A} />
+              <Route path="/photography/B" component={B} />
+              <Route path="/photography/C" component={C} />
 
-              <Switch>
-                <Route exact path="/" component={Photography} />
-                <Route path="/articles" component={Articles} />
-                <Route path="/about" component={About} />
-                <Route path="/photography/canyons" component={Canyons} />
-                <Route path="/photography/A" component={A} />
 
-
-              </Switch>
+            </Switch>
 
       <Header/>
       <NavBar />
-
 
       </div>
 

@@ -1,21 +1,21 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Canyons from "./Canyons.js"
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 
 class CatPhoto extends React.Component {
 
   render(){
     var category = this.props.cat;
+    var id = this.props.id;
 
     return (
 
         <div className="column-cat">
-            <img src={this.props.src}/>
-              <div className={"textClassName"}>
-                <h2>Nature</h2>
-              </div>
-
+          <Link activeClass="active" to={String(id)} spy={true} smooth={true} duration={500} >
+                <img src={this.props.src}/>
+          </Link>
         </div>
 
     )
