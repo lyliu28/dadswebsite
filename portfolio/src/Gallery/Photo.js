@@ -8,14 +8,17 @@ class Photo extends React.Component {
   render(){
     var category = this.props.cat;
     var url = "./photography/".concat(category);
+    var divClassName = "column"
+    var textClassName = "text-block"
+    var overlayClassName = "overlay"
+
 
   return (
-      <div className="column">
+      <div className={divClassName}>
       <Link to={url}>
-
           <img src={this.props.src}/>
-          <div className ="overlay">
-            <div className="text-block">
+          <div className ={overlayClassName}>
+            <div className={textClassName}>
               <h2>Nature</h2>
             </div>
           </div>

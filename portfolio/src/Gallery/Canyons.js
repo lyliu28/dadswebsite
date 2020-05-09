@@ -1,7 +1,7 @@
 import photoData from "../photoData"
 import React from "react"
 import Photo from './Photo'
-import canyonData from './canyonData'
+import canyonData from './PhotoData/canyonData'
 
 //https://reactjsexample.com/responsive-react-masonry-photo-gallery-component/
 
