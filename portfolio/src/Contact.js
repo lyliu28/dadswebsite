@@ -1,5 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import axios from 'axios';
+
+const API_PATH = 'http://localhost:3000/contact.php';
 
 
 class Contact extends React.Component {
@@ -9,17 +12,14 @@ class Contact extends React.Component {
     this.state = {
       fname: '',
       email: '',
-      message: ''
-
+      message: '',
+      mailSent: false,
+      error: null
     }
+    this.handleFormSubmit = this.handleFormSubmit.bind(this)
 
   }
-{/*}
-  handleFormSubmit( event ) {
-  event.preventDefault();
-  console.log(this.state);
-}
-{*/}
+
 
 handleFormSubmit = e => {
   e.preventDefault();
@@ -40,11 +40,11 @@ handleFormSubmit = e => {
 
   render() {
     return (
-      <form action="/action_page.php">
+      <form action="#">
         <label>Name</label>
           <input type="text" id="fname" name="name" placeholder="Your name"
           value={this.state.fname}
-          onChange={n => this.setState({dname: n.target.value})}
+          onChange={n => this.setState({fname: n.target.value})}
           />
 
         <label>Email</label>
@@ -56,11 +56,18 @@ handleFormSubmit = e => {
 
         <label>Subject</label>
         <textarea id="message" name="message"
-         onChange={e=>this.setState({message: e.target.value})}
          value={this.state.message}
+         onChange={e=>this.setState({message: e.target.value})}
+
         ></textarea>
 
         <input type="submit" onClick={e=> this.handleFormSubmit(e)} value="Submit" />
+
+        <div>
+  {this.state.mailSent &&
+    <div> Thank you for contcting us.</div>
+  }
+</div>
 
 
       </form>
