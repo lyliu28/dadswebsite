@@ -5,7 +5,7 @@
 }
 
 * {
-  background-color: #39404a;
+  background-color: white;
 }
 
 body {
@@ -13,12 +13,14 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 h1 {
-  padding-top: 130px;
+  padding-top: 160px;
+  font-size: 28px;
   float:center;
   text-align: center;
 }
 
 h5{
+  color: grey;
   text-align: center;
   padding-bottom: 0px;
   padding-top: 110px;
@@ -30,7 +32,7 @@ h5{
   position: absolute;
   top: 30px;
   padding-left: 50px;
-  color: #dfe2e8;
+  color: #a3b9c2;
 
 }
 
@@ -47,11 +49,6 @@ h5{
   color: purple;
 }
 */
-
-.App-link {
-  color: #61dafb;
-}
-
 
 
 .my-masonry-grid {
@@ -88,7 +85,7 @@ nav{
 }
 
 .nav-links{
-  width: 30%;
+  width: 45%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -98,7 +95,7 @@ nav{
 
 .item{
   color:grey;
-  margin-right: 30px;
+  margin-right: 60px;
   text-decoration: none;
 }
 
@@ -109,16 +106,20 @@ nav{
 .gallery-container{
     padding-top: 200px;
     text-align: center;
+    line-height: 0px;
 }
 
 .category-container{
     padding-top: 0px;
     padding-bottom: 300px;
     text-align: center;
+    line-height: 0px;
+
 }
 
 .cat-large-container{
   text-align: center;
+
 }
 
 
@@ -135,21 +136,17 @@ nav{
   width: 350px;
   position: relative;
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 1px;
+  line-height: 0px;
 
 }
 
 .column-cat {
-  width: 350px;
+  width: 280px;
   position: relative;
   display: inline-block;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 1px;
+
 }
 
 .column-cat-large {
@@ -180,15 +177,16 @@ nav{
 
 .text-block {
 position: absolute;
-bottom: 0px;
-right: 80px;
-padding-left: 20px;
-padding-right: 20px;
+bottom: 30px;
+font-size: 15px;
+padding-left: 43%;
+color: #a3b9c2;
 }
 
 .column:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
+
 
 .overlay {
   position: absolute;
@@ -227,10 +225,11 @@ padding-right: 20px;
   }
 
   h5{
+    color: #a3b9c2;
     text-align: center;
     padding-bottom: 0px;
     padding-top: 170px;
-    font-size: 20px;
+    font-size: 9px;
   }
 
   h1 {
@@ -239,6 +238,7 @@ padding-right: 20px;
     float:center;
     text-align: center;
   }
+
 
   nav{
 

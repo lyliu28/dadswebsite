@@ -13,7 +13,7 @@ class CatPhoto extends React.Component {
     return (
 
         <div className="column-cat">
-          <Link activeClass="active" to={String(id)} spy={true} smooth={true} duration={500} >
+          <Link activeClass="active" to={String(id)} spy={true} smooth={true} duration={50} >
                 <img src={this.props.src}/>
           </Link>
         </div>
