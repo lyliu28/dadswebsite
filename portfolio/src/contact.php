@@ -20,20 +20,54 @@ if ($_POST)
 	$msg = $_POST['number'] . $_POST['message'];
 
 	// Headers removed
-	mail($to, $subject, $msg);
+	$headers = "MIME-Version: 1.0\r\n";
+	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
+	$headers.= "From: <" . $from . ">";
+	$sent = mail($to, $subject, $msg);
+
+
+	if ($sent) {
+
+?><html>
+<head>
+<title>Thank You</title>
+</head>
+<body>
+<h1>Thank You</h1>
+<p>Thank you for your feedback.</p>
+</body>
+</html>
+<?php
+
+} else {
+
+?><html>
+<head>
+<title>Something went wrong</title>
+</head>
+<body>
+<h1>Something went wrong</h1>
+<p>We could not send your feedback. Please try again.</p>
+</body>
+</html>
+<?php
+}
+
 
 	// echo json_encode( $_POST );
 
-	echojson_encode(array(
-		"sent" => true
-	));
-	}
-  else
-	{
+	// echojson_encode(array(
+	// 	"sent" => true
+	// ));
+	// }
+  // else
+	// {
+	//
+	// // tell the user about error
+	//
+	// echojson_encode(["sent" => false, "message" => "Something went wrong"]);
+	// }
 
-	// tell the user about error
 
-	echojson_encode(["sent" => false, "message" => "Something went wrong"]);
-	}
 
 ?>

@@ -2,7 +2,9 @@ import React from "react"
 import ReactDOM from "react-dom"
 import axios from 'axios';
 
-const API_PATH = 'http://localhost:3000/contact.php';
+const API_PATH = './contact.php';
+
+//https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0
 
 
 class Contact extends React.Component {
@@ -40,12 +42,16 @@ handleFormSubmit = e => {
 
   render() {
     return (
-      <form action="#">
+      <form action="./contact.php" method="post">
+      <div className= "box">
         <label>Name</label>
           <input type="text" id="fname" name="name" placeholder="Your name"
           value={this.state.fname}
           onChange={n => this.setState({fname: n.target.value})}
           />
+          </div>
+
+        <div className="box">
 
         <label>Email</label>
           <input type="email" id="email" name="email" placeholder="Your email"
@@ -53,15 +59,18 @@ handleFormSubmit = e => {
             onChange={e => this.setState({email: e.target.value})}
 
           />
+          </div>
 
-        <label>Subject</label>
+          <div className ="box">
+        <label>Message</label>
         <textarea id="message" name="message"
          value={this.state.message}
          onChange={e=>this.setState({message: e.target.value})}
 
         ></textarea>
+        </div>
 
-        <input type="submit" onClick={e=> this.handleFormSubmit(e)} value="Submit" />
+        <input type="submit" name="send" onClick={e=> this.handleFormSubmit(e)} value="Submit" />
 
         <div>
   {this.state.mailSent &&

@@ -7,6 +7,7 @@ import Articles from "./Articles"
 import Canyons from "./Gallery/Canyons"
 import About from "./About"
 import Contact from"./Contact"
+import SocialMedia from "./SocialMedia"
 import A from "./Gallery/A"
 import B from "./Gallery/B"
 import C from "./Gallery/C"
@@ -42,8 +43,8 @@ class App extends React.Component {
             </Switch>
 
       <Header/>
+      <SocialMedia/>
       <NavBar />
-
 
       </div>
 

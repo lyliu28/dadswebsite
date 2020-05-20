@@ -19,6 +19,7 @@ function Header(){
 
   return (
     <div className = "Header">
+    
     <h3 className="name">Dawei Liu</h3>
 
     </div>
