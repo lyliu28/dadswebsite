@@ -38,8 +38,6 @@ class App extends React.Component {
               <Route path="/photography/A" component={A} />
               <Route path="/photography/B" component={B} />
               <Route path="/photography/C" component={C} />
-
-
             </Switch>
 
       <Header/>
