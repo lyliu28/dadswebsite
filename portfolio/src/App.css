@@ -146,7 +146,7 @@ nav{
 
 .social {
   position: absolute;
-  top: 160px;
+  top: 200px;
   right: 10%;
   color: #a3b9c2;
 }
@@ -154,9 +154,10 @@ nav{
 
 /* -------Gallery----------*/
 .gallery-container{
-    padding-top: 220px;
+    padding-top: 250px;
     text-align: center;
     line-height: 0px;
+    padding-bottom: 30px;
 }
 
 .category-container{
