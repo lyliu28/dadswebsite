@@ -1,56 +1,30 @@
-
-import React from "react"
-import Header from "./Header"
-import NavBar from "./NavBar"
-import Footer from "./Footer"
-import Articles from "./Articles"
-import Canyons from "./Gallery/Canyons"
-import About from "./About"
-import Contact from"./Contact"
-import SocialMedia from "./SocialMedia"
-import A from "./Gallery/A"
-import B from "./Gallery/B"
-import C from "./Gallery/C"
-
-
-
-import ReactModal from 'react-modal';
-
-
-import Photography from "./Photography"
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-
-
+import React from 'react';
+import Header from './header'
 import './App.css';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import Photography from './Photography';
+import About from './About';
+import Contact from './Contact';
+import Flight from './Flight';
 
 
-class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-      <div>
-            <Switch>
-              <Route exact path="/" component={Photography} />
-              <Route path="/articles" component={Articles} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/photography/canyons" component={Canyons} />
-              <Route path="/photography/A" component={A} />
-              <Route path="/photography/B" component={B} />
-              <Route path="/photography/C" component={C} />
-            </Switch>
+function App() {
+  return (
+    <BrowserRouter>  
+    <Header/>
 
-      <Header/>
-      <SocialMedia/>
-      <NavBar />
 
-      </div>
+<Switch>
+<Route exact path="/" component={Photography} />
+<Route path="/about" component={About} />
+<Route path="/contact" component={Contact} />
+<Route path="/photography/Flight" component={Flight} />
 
-      </BrowserRouter>
+</Switch>
 
-    )
-  }
+</BrowserRouter>
+
+  )
 }
 
-
-export default App
+export default App;

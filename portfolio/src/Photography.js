@@ -1,9 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import NavBar from './NavBar'
-import Photo from './Gallery/Photo'
-import photoData from "./photoData"
-import Masonry from "react-masonry-css"
+import Photo from './Components/Photo'
+import MainPhoto from './Components/MainPhoto'
+import photoData from './photoData.js'
 
 //https://reactjsexample.com/responsive-react-masonry-photo-gallery-component/
 
@@ -12,25 +11,12 @@ import Masonry from "react-masonry-css"
 class Photography extends React.Component {
     render(){
       const photoComponents = photoData.map(photo=>
-          <Photo cat = {photo.category} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
+          <MainPhoto cat = {photo.category} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height} category={photo.category}/>)
 
       return (
         <div className="gallery-container">
-        {/*}<div>
-          <h1> Photography</h1>
-          <Masonry
-          breakpointCols={3}
-          className="my_masonry_grid"
 
-          columnClassName="my-masonry-grid_column">
-          */}
       {photoComponents}
-      {/*
-          </Masonry>
-
-
-          </div>
-          */}
 
           </div>
 

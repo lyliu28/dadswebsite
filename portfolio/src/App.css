@@ -1,315 +1,80 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@515&display=swap');
 
 * {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-sizing: border-box;
 
 }
 
-
-.name{
-  font-size: 36px;
-  position: absolute;
-  top: 30px;
-  padding-left: 70px;
-  color: #a3b9c2;
-
-}
-
-body {
-  font-family: 'Ubuntu', sans-serif;
-  font-family: 'PT Sans', sans-serif;
-}
-h1 {
-  padding-top: 160px;
-  font-size: 28px;
-  float:center;
-  text-align: center;
-}
-
-h5{
-  color: grey;
-  text-align: center;
-  padding-bottom: 0px;
-  padding-top: 110px;
-  font-size: 30px;
-}
-
-
-/*-- contact form--*/
-/*-----------------*/
-form {
-    margin:200px auto;
-    background-color: grey;
-    border-radius: 8px;
-    padding: 20px;
-    width: 50%;
-    text-align: center;
-
-}
-
-.box {
-  color: grey;
-  padding: 12px 20px;
-
-}
-
-input[type=submit] {
-    background-color: #a3b9c2;
-    color: grey;
-    margin-top: 10px;
-    padding: 12px 18px;
-    border: none;
-    cursor: pointer;
-}
-
-label {
-  padding: 10px;
-}
-
-input[type=submit]:active {
-    background-color: white;
-}
-
-input[type=text], input[type=email],textarea {
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-
-
-
-/*
-.App-header {
-  background-color: #282d34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: purple;
-}
-*/
-
-
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
-}
-
-/* Style your items */
-.my-masonry-grid_column > Photo { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
-}
-
-/* ------Navigation-------*/
-nav{
-  float: right;
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 15px;
-  height: 10%;
-  font-size: 16px;
-  background-color: rgba(30, 0, 0, 0);
-  top: 100px;
-  width: 100%;
-}
-
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 50px;
-
-}
-
 .item{
-  color:grey;
-  margin-right: 60px;
+  color: grey;
+  margin: 20px;
+  font-weight: 30px;
+  font-family: 'Varta', sans-serif;
   text-decoration: none;
 }
 
-/* ------Navigation End-------*/
-
-/*-------Social Media--------*/
-
-.social {
-  position: absolute;
-  top: 200px;
-  right: 10%;
-  color: #a3b9c2;
-}
-
-
-/* -------Gallery----------*/
-.gallery-container{
-    padding-top: 250px;
-    text-align: center;
-    line-height: 0px;
-    padding-bottom: 30px;
-}
-
-.category-container{
-    padding-top: 0px;
-    padding-bottom: 300px;
-    text-align: center;
-    line-height: 0px;
+.item_underlined{
+  color: rgb(92, 16, 16);
+  margin: 20px;
+  font-weight: 30px;
+  font-family: 'Varta', sans-serif;
+  text-decoration: none;
 
 }
 
-.cat-large-container{
-  text-align: center;
-
+.social{
+  margin-left:auto;
+  margin-right:20px;
 }
 
-
-/*
-.row {
-   width: 90%;
-   margin: auto;
-}
-*/
-
-/* Create three equal columns that floats next to each other */
 
 .column {
-  width: 350px;
+  width: 40%;
   position: relative;
   display: inline-block;
-  margin: 1px;
+  margin: 30px;
   line-height: 0px;
 
 }
 
-.column-cat {
-  width: 280px;
-  position: relative;
-  display: inline-block;
-  margin: 1px;
-
-}
-
-.column-cat-large {
-  width: 90%;
-  position: relative;
-  display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.column-cat-large img{
-  width: 100%;
-
-}
-
-.column-cat img {
-  width: 100%;
-
-
-}
-.column img {
-  width: 100%;
-
-
-}
-
-.text-block {
-position: absolute;
-bottom: 30px;
-font-size: 15px;
-padding-left: 43%;
-color: #a3b9c2;
-}
-
-.column:hover .overlay {
-  opacity: 0.7;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-
-}
-
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 500px) {
   .column {
     width: 400px;
     position: relative;
     display: inline-block;
     margin-left: 5px;
   }
-  .column img {
-    width: 400px;
-    padding-right: 0px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .column {
-    width: 90%;
-    position: relative;
-    display: inline-block;
-    margin: auto;
-  }
-  .column img {
-    width: 90%;
-  }
-
-  h5{
-    color: #a3b9c2;
-    text-align: center;
-    padding-bottom: 0px;
-    padding-top: 170px;
-    font-size: 9px;
-  }
-
-  h1 {
-    padding-top: 160px;
-    font-size: 20px;
-    float:center;
-    text-align: center;
-  }
-
-
-  nav{
-
-    justify-content: right;
-
-  }
-
-  .nav-links {
-    padding: 0px;
-  }
-
-  .item {
-    margin-right: 30px;
-  }
-
-  .name {
-    text-align: center;
-  }
 
 }
 
 
+.text-block {
+  position: absolute;
+  bottom: 30px;
+  font-size: 15px;
+  padding-left: 45%;
+  color: #2c6277;
+  }
+  
+  .column:hover .overlay {
+    opacity: 0.7;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+  }  
 
-/* -------Gallery End----------*/
+  .gallery-container{
+    padding-top: 50px;
+    text-align: center;
+    line-height: 0px;
+    padding-bottom: 50px;
+}

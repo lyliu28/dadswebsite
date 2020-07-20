@@ -1,53 +1,61 @@
+import fly from "./photos/take_flight/fly.jpg"
+import ear_owl from "./photos/take_flight/ear_owl.jpg"
+import baby_dance from "./photos/take_flight/baby_dance.jpg"
+import swans from "./photos/take_flight/swans.jpg"
+import barn_owl from "./photos/take_flight/barn_owl.jpg"
+import owl from "./photos/take_flight/owl.jpg"
+
+
+
 const photoData = [
 
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80",
+    src: fly,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "160px",
     height: "120px",
-    category: "A"
+    category: "Flight"
   },
 
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80",
+    src: ear_owl,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "320px",
     height: "200",
-    category: "B"
+    category: "Desert"
   },
 
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80",
+    src: baby_dance,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "300px",
     height: "200",
-    category: "C"
-
+    category: "Ocean"
 
   },
 
 
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80",
+    src: swans,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "300px",
     height: "200",
-    category: "D"
+    category: "Life"
 
 
   },
 
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80",
+src: barn_owl,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "300px",
@@ -56,7 +64,7 @@ const photoData = [
 
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&w=1000&q=80",
+    src: owl,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "300px",
