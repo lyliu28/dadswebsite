@@ -12,10 +12,10 @@ const Top = styled.div`
         margin-right: 0;
     }
     align-items: center;
-    margin-right: 5%;
+    margin-right: 9%;
 `
 const Name = styled.h1`
-    margin-left: 7%;
+    margin-left: 13.5%;
     font-size: 34px;
     color:grey;
     font-family: 'Varta', sans-serif;

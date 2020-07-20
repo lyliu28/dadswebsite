@@ -4,6 +4,10 @@ import baby_dance from "./photos/take_flight/baby_dance.jpg"
 import swans from "./photos/take_flight/swans.jpg"
 import barn_owl from "./photos/take_flight/barn_owl.jpg"
 import owl from "./photos/take_flight/owl.jpg"
+import zoom from "./photos/take_flight/zoom.jpg"
+import circus from "./photos/take_flight/circus.jpg"
+
+
 
 
 
@@ -11,7 +15,7 @@ const photoData = [
 
   {
     id: 1,
-    src: fly,
+    src: zoom,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "160px",
@@ -55,7 +59,7 @@ const photoData = [
 
   {
     id: 5,
-src: barn_owl,
+    src: circus,
     title: "Land's End",
     desc: "This was a beautiful morning",
     width: "300px",

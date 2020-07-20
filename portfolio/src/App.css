@@ -29,26 +29,6 @@
 }
 
 
-.column {
-  width: 40%;
-  position: relative;
-  display: inline-block;
-  margin: 30px;
-  line-height: 0px;
-
-}
-
-@media only screen and (max-width: 500px) {
-  .column {
-    width: 400px;
-    position: relative;
-    display: inline-block;
-    margin-left: 5px;
-  }
-
-}
-
-
 .text-block {
   position: absolute;
   bottom: 30px;
@@ -57,20 +37,6 @@
   color: #2c6277;
   }
   
-  .column:hover .overlay {
-    opacity: 0.7;
-
-  }  
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-  }  
 
   .gallery-container{
     padding-top: 50px;
