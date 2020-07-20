@@ -1,1 +1,1 @@
-<?php header( 'Location: /portfolio/src/index.js' ) ;  ?>
+<?php header( 'Location: /portfolio/src/index.html' ) ;  ?>

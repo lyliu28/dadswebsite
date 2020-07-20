@@ -13,7 +13,13 @@ const Image = styled.img`
     width:inherit;
     height:600px;
     object-fit: cover;
+
+  ${ImageContainer}:hover & {
+    transform: scale(1.5); 
+  }
+
 `
+
 
 class Photo extends React.Component {
 
