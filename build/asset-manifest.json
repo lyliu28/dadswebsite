@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.360ffec6.chunk.css",
+    "main.js": "/static/js/main.f952ae7d.chunk.js",
+    "main.js.map": "/static/js/main.f952ae7d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0a846a81.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0a846a81.js.map",
+    "static/js/2.6ff1c85a.chunk.js": "/static/js/2.6ff1c85a.chunk.js",
+    "static/js/2.6ff1c85a.chunk.js.map": "/static/js/2.6ff1c85a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.19caa6790d7b447fa75265d5fbd84392.js": "/precache-manifest.19caa6790d7b447fa75265d5fbd84392.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.360ffec6.chunk.css.map": "/static/css/main.360ffec6.chunk.css.map",
+    "static/js/2.6ff1c85a.chunk.js.LICENSE.txt": "/static/js/2.6ff1c85a.chunk.js.LICENSE.txt",
+    "static/media/baby_dance.jpg": "/static/media/baby_dance.8a0257a5.jpg",
+    "static/media/barn_owl.jpg": "/static/media/barn_owl.99a50333.jpg",
+    "static/media/App.css": "/static/media/swans.59073d90.jpg",
+    "static/media/circus.jpg": "/static/media/circus.849e41fc.jpg",
+    "static/media/ear_owl.jpg": "/static/media/ear_owl.9c7d001a.jpg",
+    "static/media/fly.jpg": "/static/media/fly.b77c9eed.jpg",
+    "static/media/instagram_logo.png": "/static/media/instagram_logo.b15d2ee0.png",
+    "static/media/owl.jpg": "/static/media/owl.d03b0470.jpg",
+    "static/media/tuchong_logo.png": "/static/media/tuchong_logo.eeee4303.png",
+    "static/media/zoom.jpg": "/static/media/zoom.0e1eed0f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a846a81.js",
+    "static/js/2.6ff1c85a.chunk.js",
+    "static/css/main.360ffec6.chunk.css",
+    "static/js/main.f952ae7d.chunk.js"
+  ]
+}
