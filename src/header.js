@@ -14,6 +14,7 @@ const Top = styled.div`
     align-items: center;
     margin-right: 9%;
 `
+/*
 const Name = styled.h1`
     margin-left: 13.5%;
     font-size: 34px;
@@ -24,6 +25,7 @@ const Name = styled.h1`
         margin-left: 0
     }
 `
+
 const ChineseName = styled.h1`
     font-size: 23px;
     color:grey;
@@ -32,14 +34,24 @@ const ChineseName = styled.h1`
         font-size: 18px;
     }
 `
+*/
+
+const StyledLink = styled(Link)`
+  color: palevioletred;
+  font-weight: bold;
+`;
 
 const Header = () => {
     const [selected, setSelected] = useState("")
     return <Top>
+    /*
         <Name>DAWEI LIU</Name>
-        <ChineseName> (金山大卫）</ChineseName>
+        <ChineseName> 金山大卫 </ChineseName>
+        */
+        <StyledLink to="/" onClick={() => setSelected("/")} className={Name}>Dawei Liu 金山大卫</StyledLink>
         <Link to="/" onClick={() => setSelected("/")} className={selected === "/"? "item_underlined" : "item"}>Photography</Link>
         <Link to="/about" onClick={() => setSelected("/about")} className={selected === "/about"? "item_underlined" : "item"}>About</Link>
+
         <div className="social">
             <a  target="_blank" href="https://tuchong.com/16561503/">
             <img src={tuchong_logo} style ={{width:28, margin: "10px"}}/>
@@ -51,7 +63,7 @@ const Header = () => {
             <img src={mail} style = {{width:22, margin: "12px"}}/>
             </a>
         </div>
-    </Top> 
+    </Top>
 }
 
 export default Header
