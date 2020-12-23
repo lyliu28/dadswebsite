@@ -8,15 +8,13 @@ import photoData from './photoData.js'
 
 
 
-class Photography extends React.Component {
+class Workshops extends React.Component {
     render(){
-      const photoComponents = photoData.map(photo=>
-          <MainPhoto cat = {photo.category} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height} category={photo.category}/>)
 
       return (
         <div className="gallery-container">
 
-      {photoComponents}
+      Coming Soon!
 
           </div>
 
@@ -24,4 +22,4 @@ class Photography extends React.Component {
     }
 }
 
-export default Photography
+export default Workshops

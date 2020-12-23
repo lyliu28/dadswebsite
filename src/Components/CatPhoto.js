@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import styled from 'styled-components'
 
 const Column = styled.div`
@@ -25,7 +25,7 @@ const Overlay = styled.div`
     opacity: 0;
     transition: .5s ease;
     ${Column}:hover & {
-      opacity: 0.7;
+      opacity: 0.2;
     }
 `
 
@@ -45,14 +45,13 @@ class Photo extends React.Component {
 
   render(){
     var category = this.props.cat;
-    var url = "./photography/".concat(category);
-    var divClassName = "column"
     var textClassName = "text-block"
-    var overlayClassName = "overlay"
+    var id = this.props.id;
+
 
   return (
       <Column>
-      <Link to={url}>
+      <Link activeClass="active" to={String(id)} spy={true} smooth={true} duration={500} >
           <ImageContainer>
           <Image src={this.props.src}/>
           </ImageContainer>
@@ -64,7 +63,7 @@ class Photo extends React.Component {
           </Overlay>
 
       </Link>
-      </Column>
+        </Column>
 
     )
 }

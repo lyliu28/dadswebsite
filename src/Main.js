@@ -1,40 +1,33 @@
 import React from 'react';
 import styled from 'styled-components'
+import 'react-slideshow-image/dist/styles.css'
 
-const Head = styled.div`
-    margin-left: 13.5%;
-    font-size: 20px;
-    color:grey;
-    font-family: 'Varta', sans-serif;
-`
+import { Slide } from 'react-slideshow-image';
+import fly from "./photos/take_flight/fly.jpg"
+import swans from "./photos/take_flight/swans.jpg"
+import owl from "./photos/take_flight/owl.jpg"
 
-const Para = styled.div`
-    margin: 50px;
-`
 
-const Text = styled.p`
-    color: grey;
-    font-weight: 30px;
-    font-family: 'Varta', sans-serif;
-    text-decoration: none;
-`
+const Main = () => {
+    return (
+      <div className="gallery-container">
+        <Slide easing="ease" duration="3000">
+            <div className="each-slide">
+              <div style={{backgroundImage: `url(${fly})`}}>
+              </div>
+          </div>
+          <div className="each-slide">
+            <div style={{'backgroundImage': `url(${owl})`}}>
+            </div>
+          </div>
+          <div className="each-slide">
+            <div style={{'backgroundImage': `url(${swans})`}}>
+            </div>
+          </div>
+        </Slide>
+      </div>
+    )
+};
 
-const Main = () => (
-    <div>
-        <div class="parallax"></div>
-        <div style={{width: '70%'}}>
-        <Head><h1> Behind the Lens </h1></Head>
-        </div>
-
-        <div class="parallax1"> </div>
-        <Para>
-            <Text>
-                Dawei Liu is a natural world photographer based in the Bay Area, CA.
-            </Text>
-        </Para>
-
-    </div>
-
-)
 
 export default Main

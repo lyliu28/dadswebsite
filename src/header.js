@@ -12,7 +12,8 @@ const Top = styled.div`
         margin-right: 0;
     }
     align-items: center;
-    margin-right: 9%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 `
 /*
 const Name = styled.h1`
@@ -37,21 +38,44 @@ const ChineseName = styled.h1`
 */
 
 const StyledLink = styled(Link)`
-  color: palevioletred;
-  font-weight: bold;
-`;
+  margin-left: 7%;
+  font-size: 30px;
+  color:grey;
+  font-family: 'Varta', sans-serif;
+  text-decoration: none;
+  @media only screen and (max-width: 600px) {
+      font-size: 20px;
+      margin-left: 0
+  }
+`
+
+
+const StyledLink2 = styled(Link)`
+  margin-left: 1%;
+  font-size: 20px;
+  color:grey;
+  font-family: 'Varta', sans-serif;
+  text-decoration: none;
+  @media only screen and (max-width: 600px) {
+      font-size: 20px;
+      margin-left: 0
+  }
+`
 
 const Header = () => {
     const [selected, setSelected] = useState("")
     return <Top>
-    /*
-        <Name>DAWEI LIU</Name>
-        <ChineseName> 金山大卫 </ChineseName>
-        */
-        <StyledLink to="/" onClick={() => setSelected("/")} className={Name}>Dawei Liu 金山大卫</StyledLink>
-        <Link to="/" onClick={() => setSelected("/")} className={selected === "/"? "item_underlined" : "item"}>Photography</Link>
-        <Link to="/about" onClick={() => setSelected("/about")} className={selected === "/about"? "item_underlined" : "item"}>About</Link>
+          <StyledLink to="/" onClick={() => setSelected("/")}>Dawei Liu</StyledLink>
+          <StyledLink2 to="/" onClick={() => setSelected("/")}> 金山大卫</StyledLink2>
 
+          <div style={{"margin-left": "20%"}}>
+
+          <Link to="/landscape" onClick={() => setSelected("/landscape")} className={selected === "/landscape"? "item_underlined" : "item"}>Landscape</Link>
+          <Link to="/wildlife" onClick={() => setSelected("/wildlife")} className={selected === "/wildlife"? "item_underlined" : "item"}>Wildlife</Link>
+          <Link to="/workshops" onClick={() => setSelected("/workshops")} className={selected === "/workshops"? "item_underlined" : "item"}>Workshops</Link>
+          <Link to="/contact" onClick={() => setSelected("/contact")} className={selected === "/contact"? "item_underlined" : "item"}>Contact</Link>
+          <Link to="/about" onClick={() => setSelected("/about")} className={selected === "/about"? "item_underlined" : "item"}>About</Link>
+        </div>
         <div className="social">
             <a  target="_blank" href="https://tuchong.com/16561503/">
             <img src={tuchong_logo} style ={{width:28, margin: "10px"}}/>
