@@ -27,8 +27,7 @@
 }
 
 .social{
-  margin-left:auto;
-  margin-right:7%;
+  margin-right:9%;
 }
 
 
@@ -84,6 +83,61 @@
 }
 
 
+
+
+
+.contact-form{
+  width: 50%;
+  padding:10%;
+  display:flex;
+  flex-direction: column;
+  text-align: right;
+
+}
+
+@media screen and (max-width: 500px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+
+.form-group {
+  text-align: left;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.btn {
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width:50%;
+
+}
+
+.form-group input textarea{
+  height:30px;
+  margin-top: 30px;
+
+}
+
+.form-group textarea {
+  height:100px;
+}
+
+.form-group label {
+  color: grey;
+  font-weight: 30px;
+  font-family: 'Varta', sans-serif;
+  text-decoration: none;
+}
+
+
+
+
 .parallax {
   /* The image used */
   background-image: url("photos/take_flight/bluebird.jpg");
@@ -93,9 +147,16 @@
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+@media screen and (max-width: 750px) {
+  .parallax {
+    min-height: 300px;
+  }
 }
 
 .parallax1 {
@@ -107,7 +168,13 @@
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .parallax1 {
+    min-height: 300px;
+  }
 }

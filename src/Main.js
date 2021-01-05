@@ -6,7 +6,7 @@ import { Slide } from 'react-slideshow-image';
 import fly from "./photos/take_flight/fly.jpg"
 import swans from "./photos/take_flight/swans.jpg"
 import owl from "./photos/take_flight/owl.jpg"
-
+/**https://react-slideshow.herokuapp.com/api **/
 
 const Main = () => {
     return (

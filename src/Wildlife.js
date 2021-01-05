@@ -1,27 +1,45 @@
-import React from "react"
+import React, { useState, useEffect } from 'react';
 import ReactDOM from "react-dom"
-import Photo from './Components/Photo'
-import MainPhoto from './Components/MainPhoto'
+import CatPhoto from './Components/CatPhoto'
+import CatPhotoLarge from './Components/CatPhotoLarge'
 import photoData from './photoData.js'
 
 //https://reactjsexample.com/responsive-react-masonry-photo-gallery-component/
 
 
 
-class Wildlife extends React.Component {
-    render(){
-      const photoComponents = photoData.map(photo=>
-          <MainPhoto cat = {photo.category} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height} category={photo.category}/>)
+const Wildlife = () => {
 
-      return (
-        <div className="gallery-container">
-
-      {photoComponents}
-
-          </div>
-
-      )
+    const [width, setWidth]   = useState(window.innerWidth);
+    const updateDimensions = () => {
+      setWidth(window.innerWidth);
     }
+
+    useEffect(() => {
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, []);
+
+    const photos = photoData.map(photo=>
+        <CatPhoto id = {photo.id} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
+
+    const large_photos = photoData.map(photo=>
+        <CatPhotoLarge id = {photo.id} src={photo.src} title={photo.title} desc={photo.desc} width={photo.width} height={photo.height}/>)
+
+    return (
+      <div>
+      {width > 750 &&
+        <div className="gallery-container">
+          {photos}
+        </div>}
+
+        <div className="cat-large-container">
+          {large_photos}
+        </div>
+
+      </div>
+
+  )
 }
 
 export default Wildlife

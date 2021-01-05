@@ -11,6 +11,7 @@ import Flight from './Flight';
 import Mountains from './Mountains';
 import Workshops from './Workshops';
 import Desert from './Desert';
+import Purchase from './Purchase';
 import { loadStripe } from '@stripe/stripe-js';
 const stripePromise = loadStripe('pk_test_fC4g4zNnIbk9ikRi0o8M8IKQ00zOd1bulv');
 
@@ -48,6 +49,7 @@ function App() {
       <Route path="/landscape" component={Landscape} />
       <Route path="/wildlife" component={Wildlife} />
       <Route path="/workshops" component={Workshops} />
+      <Route path="/purchase" component={Purchase} />
       <Route path="/contact" component={Contact} />
 
       </Switch>

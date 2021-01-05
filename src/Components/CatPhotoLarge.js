@@ -15,6 +15,9 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
     width:inherit;
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
     object-fit: cover;
 `
 
